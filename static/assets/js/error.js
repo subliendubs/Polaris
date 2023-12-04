@@ -12,8 +12,8 @@ class PolarisError {
 
         const error = document.createElement('div');
         error.classList = 'notification error';
-        if (e.message) error.innerHTML = `<span>skill issue detected: ${e.message.toString()}</span>`;
-        else error.innerHTML = `<span>skill issue detected: ${e.toString()}</span>`;
+        if (e.message) error.innerHTML = `<span>skill issue detected</span>`;
+        else error.innerHTML = `<span>skill issue detected</span>`;
         notificationContainer.appendChild(error);
 
         error.onclick = () => {
