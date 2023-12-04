@@ -575,7 +575,7 @@ input:checked+.slider:before {
     background-color: var(--background-color);
     box-shadow: 0.5vh 0.5vh 1vh 0vh var(--shadow-color);
     width: 80vh;
-    height: 52vh;
+    height: 10vh;
     margin-left: 15vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
