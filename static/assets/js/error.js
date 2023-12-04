@@ -12,8 +12,8 @@ class PolarisError {
 
         const error = document.createElement('div');
         error.classList = 'notification error';
-        if (e.message) error.innerHTML = `<span>something didnt load, i blame you.</span>`;
-        else error.innerHTML = `<span>something didnt load, i blame you.</span>`;
+        if (e.message) error.innerHTML = `<span>An error occurred: ${e.message.toString()}</span>`;
+        else error.innerHTML = `<span>An error occurred: ${e.toString()}</span>`;
         notificationContainer.appendChild(error);
 
         error.onclick = () => {
@@ -39,9 +39,9 @@ class PolarisError {
         }, 8000);
 
         if (e.stack) {
-            console.log('something didnt load, i blame you.';
+            console.log('An error occurred:\n\n' + e.stack);
         } else {
-            console.log('something didnt load, i blame you.');
+            console.log('An error occurred:\n\n' + e);
         }
     }
 }
